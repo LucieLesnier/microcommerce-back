@@ -1,11 +1,9 @@
 package com.example.microcommerce;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+
 import java.util.List;
 
-public interface CharacterDao {
-public List<CharacterClass> findAll();
-CharacterClass findById(int id);
-void save(CharacterClass characters);
-void update(CharacterClass updateCharacter, int id);
-void delete(int id);
+public interface CharacterDao extends JpaRepository<CharacterClass, Integer> {
+////
 }

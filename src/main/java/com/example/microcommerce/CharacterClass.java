@@ -11,6 +11,9 @@ public class CharacterClass {
     private int life;
     private int id;
 
+    public CharacterClass() {
+    }
+
     @Column
     public String getName() {
         return name;
